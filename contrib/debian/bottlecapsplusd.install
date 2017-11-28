@@ -1,0 +1,2 @@
+debian/bin/bottlecapsplusd usr/bin
+src/bottlecapsplusd usr/lib/bottlecapsplus

@@ -1,0 +1,68 @@
+#!/bin/sh
+
+# PROVIDE: bottlecapsplus
+# REQUIRE: LOGIN
+# KEYWORD: shutdown
+
+#
+# Add the following lines to /etc/rc.conf.local or /etc/rc.conf
+# to enable this service:
+#
+# bottlecapsplus_enable (bool): Set to NO by default. Set this variable to YES if you want to enable bottlecapsplus service.
+# bottlecapsplus_config (path): Set to /usr/local/etc/bottlecapsplus.conf by default.
+# bottlecapsplus_user:  The user account bottlecapsplus daemon runs as. It uses 'root' user by default.
+# bottlecapsplus_group: The group account bottlecapsplus daemon runs as. It uses 'wheel' group by default.
+# bottlecapsplus_datadir (str): Default to "/var/db/bottlecapsplus". Base data directory.
+
+. /etc/rc.subr
+
+name=bottlecapsplus
+rcvar=bottlecapsplus_enable
+
+: ${bottlecapsplus_enable:=NO}
+: ${bottlecapsplus_config=/usr/local/etc/bottlecapsplus.conf}
+: ${bottlecapsplus_datadir=/var/db/bottlecapsplus}
+: ${bottlecapsplus_user="root"}
+: ${bottlecapsplus_group="wheel"}
+
+required_files=${bottlecapsplus_config}
+command=/usr/local/bin/bottlecapsplusd
+bottlecapsplus_chdir=${bottlecapsplus_datadir}
+pidfile="${bottlecapsplus_datadir}/bottlecapsplusd.pid"
+stop_cmd=bottlecapsplus_stop
+command_args="-conf=${bottlecapsplus_config} -datadir=${bottlecapsplus_datadir} -daemon -pid=${pidfile}"
+start_precmd="${name}_prestart"
+
+bottlecapsplus_create_datadir()
+{
+	echo "Creating data directory"
+	eval mkdir -p ${bottlecapsplus_datadir}
+	[ $? -eq 0 ] && chown -R ${bottlecapsplus_user}:${bottlecapsplus_group} ${bottlecapsplus_datadir}
+}
+
+bottlecapsplus_prestart()
+{
+	if [ ! -d "${bottlecapsplus_datadir}/." ]; then
+		bottlecapsplus_create_datadir || return 1
+	fi
+}
+
+bottlecapsplus_requirepidfile()
+{
+	if [ ! "0`check_pidfile ${pidfile} ${command}`" -gt 1 ]; then
+		echo "${name} not running? (check $pidfile)."
+		exit 1
+	fi
+}
+
+bottlecapsplus_stop()
+{
+    bottlecapsplus_requirepidfile
+
+	echo "Stopping ${name}."
+	eval ${command} -conf=${bottlecapsplus_config} -datadir=${bottlecapsplus_datadir} stop
+	wait_for_pids ${rc_pid}
+}
+
+load_rc_config $name
+run_rc_command "$1"

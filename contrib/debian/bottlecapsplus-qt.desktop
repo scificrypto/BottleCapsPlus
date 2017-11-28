@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BottleCapsPlus
+Comment=BottleCapsPlus P2P Cryptocurrency
+Comment[ru]=BottleCapsPlus, P2P криптовалюта
+Comment[fr]=BottleCapsPlus, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=BottleCapsPlus, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/bottlecapsplus-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bottlecapsplus80.xpm
+MimeType=x-scheme-handler/bottlecapsplus;
+Categories=Office;

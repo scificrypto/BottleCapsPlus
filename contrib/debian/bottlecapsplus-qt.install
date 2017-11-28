@@ -1,0 +1,5 @@
+bottlecapsplus-qt usr/bin
+share/pixmaps/bottlecapsplus32.xpm usr/share/pixmaps
+share/pixmaps/bottlecapsplus80.xpm usr/share/pixmaps
+debian/bottlecapsplus-qt.desktop usr/share/applications
+debian/bottlecapsplus-qt.protocol usr/share/kde4/services/

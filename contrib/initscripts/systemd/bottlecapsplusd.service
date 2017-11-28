@@ -1,0 +1,11 @@
+[Unit]
+Description=bottlecapsplus daemon serivce
+After=network.target
+
+[Service]
+Type=simple
+User=bottlecapsplus
+ExecStart=/opt/bottlecapsplus/bottlecapsplusd
+
+[Install]
+WantedBy=multi-user.target
