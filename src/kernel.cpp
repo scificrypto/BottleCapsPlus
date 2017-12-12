@@ -32,7 +32,7 @@ typedef std::map<int, unsigned int> MapModifierCheckpoints;
 static std::map<int, unsigned int> mapStakeModifierCheckpoints =
     boost::assign::map_list_of
         ( 0, 0xfd11f4e7u )
-       //( 20, 0x9e442933u )
+      ( 120, 0xef8c6d5bu )
 
     ;
 
@@ -523,7 +523,7 @@ bool CheckStakeModifierCheckpoints(int nHeight, uint32_t nStakeModifierChecksum)
 {
     MapModifierCheckpoints& checkpoints = (fTestNet ? mapStakeModifierCheckpointsTestNet : mapStakeModifierCheckpoints);
 
- //   if (checkpoints.count(nHeight))
- //       return nStakeModifierChecksum == checkpoints[nHeight];
+    if (checkpoints.count(nHeight))
+        return nStakeModifierChecksum == checkpoints[nHeight];
     return true;
 }

@@ -12,9 +12,9 @@ const std::string CLIENT_NAME("BottleCapsPlus");
 
 // Client version number
 #ifdef USE_LEVELDB
-#define CLIENT_VERSION_SUFFIX   "-test"
+#define CLIENT_VERSION_SUFFIX   "-leveldb"
 #else
-#define CLIENT_VERSION_SUFFIX   "-test"
+#define CLIENT_VERSION_SUFFIX   "-bdb"
 #endif
 
 // Compiler name
@@ -61,7 +61,7 @@ const std::string CLIENT_NAME("BottleCapsPlus");
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
 #    define GIT_COMMIT_ID ""
-#    define GIT_COMMIT_DATE "1 Dec 2017"
+#    define GIT_COMMIT_DATE "11 Dec 2017"
 #endif
 
 #define BUILD_DESC_FROM_COMMIT(maj,min,rev,commit) \
