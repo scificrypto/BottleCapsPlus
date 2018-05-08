@@ -206,13 +206,13 @@ void SendCoinsDialog::on_sendButton_clicked()
         else 
         { 
     #if QT_VERSION < 0x050000 
-        formatted.append(tr("<b>%1</b> in %4 blocks of %5 CAPP each to %2 (%3)?").arg(BitcoinUnits::formatWithUnit(BitcoinUnits::BTC, rcp.amount),  
+        formatted.append(tr("<b>%1</b> in %4 blocks of %5 CAPS each to %2 (%3)?").arg(BitcoinUnits::formatWithUnit(BitcoinUnits::BTC, rcp.amount),  
             Qt::escape(rcp.label),  
             rcp.address,  
             QString::number(nSplitBlock),  
             BitcoinUnits::formatWithUnit(BitcoinUnits::BTC, rcp.amount / nSplitBlock)));
     #else 
-        formatted.append(tr("<b>%1</b> in %4 blocks of %5 CAPP each to %2 (%3)?").arg(BitcoinUnits::formatWithUnit(BitcoinUnits::BTC, rcp.amount),  
+        formatted.append(tr("<b>%1</b> in %4 blocks of %5 CAPS each to %2 (%3)?").arg(BitcoinUnits::formatWithUnit(BitcoinUnits::BTC, rcp.amount),  
             rcp.label.toHtmlEscaped(),  
             rcp.address,  
             QString::number(nSplitBlock),  

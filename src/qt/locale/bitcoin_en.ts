@@ -932,8 +932,8 @@ Some or all keys from:
         <translation>Amount:</translation>
     </message>
     <message>
-        <source>0.00 CAPP</source>
-        <translation type="obsolete">0.00 CAPP</translation>
+        <source>0.00 CAPS</source>
+        <translation type="obsolete">0.00 CAPS</translation>
     </message>
     <message>
         <location filename="../forms/coincontroldialog.ui" line="157"/>
@@ -1791,8 +1791,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="obsolete">123.456</translation>
     </message>
     <message>
-        <source>CAPP</source>
-        <translation type="obsolete">CAPP</translation>
+        <source>CAPS</source>
+        <translation type="obsolete">CAPS</translation>
     </message>
     <message>
         <location filename="../forms/multisigdialog.ui" line="413"/>
@@ -1901,13 +1901,13 @@ Reduce the number of addresses involved in the address creation.</translation>
     </message>
     <message>
         <location filename="../multisigdialog.cpp" line="522"/>
-        <source>The fee of the transaction (%1 CAPP) is smaller than the expected fee (%2 CAPP). Do you want to send the transaction anyway?</source>
-        <translation>The fee of the transaction (%1 CAPP) is smaller than the expected fee (%2 CAPP). Do you want to send the transaction anyway?</translation>
+        <source>The fee of the transaction (%1 CAPS) is smaller than the expected fee (%2 CAPS). Do you want to send the transaction anyway?</source>
+        <translation>The fee of the transaction (%1 CAPS) is smaller than the expected fee (%2 CAPS). Do you want to send the transaction anyway?</translation>
     </message>
     <message>
         <location filename="../multisigdialog.cpp" line="528"/>
-        <source>The fee of the transaction (%1 CAPP) is bigger than the expected fee (%2 CAPP). Do you want to send the transaction anyway?</source>
-        <translation>The fee of the transaction (%1 CAPP) is bigger than the expected fee (%2 CAPP). Do you want to send the transaction anyway?</translation>
+        <source>The fee of the transaction (%1 CAPS) is bigger than the expected fee (%2 CAPS). Do you want to send the transaction anyway?</source>
+        <translation>The fee of the transaction (%1 CAPS) is bigger than the expected fee (%2 CAPS). Do you want to send the transaction anyway?</translation>
     </message>
 </context>
 <context>
@@ -2848,8 +2848,8 @@ Reduce the number of addresses involved in the address creation.</translation>
         <translation>Amount:</translation>
     </message>
     <message>
-        <source>0.00 CAPP</source>
-        <translation type="obsolete">0.00 CAPP</translation>
+        <source>0.00 CAPS</source>
+        <translation type="obsolete">0.00 CAPS</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="337"/>
@@ -2937,8 +2937,8 @@ Reduce the number of addresses involved in the address creation.</translation>
         <translation>Balance:</translation>
     </message>
     <message>
-        <source>123.456 CAPP</source>
-        <translation type="obsolete">123.456 CAPP</translation>
+        <source>123.456 CAPS</source>
+        <translation type="obsolete">123.456 CAPS</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="772"/>

@@ -67,9 +67,9 @@ void OptionsModel::Init()
         if(fTestNet)
             settings.setValue("strThirdPartyTxUrls", "");
         else
-            settings.setValue("strThirdPartyTxUrls", "http://www.presstab.pw/phpexplorer/CAPP/tx.php?tx=%s");
+            settings.setValue("strThirdPartyTxUrls", "http://www.presstab.pw/phpexplorer/CAPS/tx.php?tx=%s");
     }
-    strThirdPartyTxUrls = settings.value("strThirdPartyTxUrls", "http://www.presstab.pw/phpexplorer/CAPP/tx.php?tx=%s").toString();
+    strThirdPartyTxUrls = settings.value("strThirdPartyTxUrls", "http://www.presstab.pw/phpexplorer/CAPS/tx.php?tx=%s").toString();
     fMinimizeToTray = settings.value("fMinimizeToTray", false).toBool();
     fMinimizeOnClose = settings.value("fMinimizeOnClose", false).toBool();
     fCoinControlFeatures = settings.value("fCoinControlFeatures", false).toBool();
