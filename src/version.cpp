@@ -61,7 +61,7 @@ const std::string CLIENT_NAME("BottleCapsPlus");
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
 #    define GIT_COMMIT_ID ""
-#    define GIT_COMMIT_DATE "11 Dec 2017"
+#    define GIT_COMMIT_DATE "28 Jan 2019"
 #endif
 
 #define BUILD_DESC_FROM_COMMIT(maj,min,rev,commit) \

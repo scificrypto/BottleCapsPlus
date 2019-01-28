@@ -28,15 +28,10 @@ namespace Checkpoints
         boost::assign::map_list_of
         ( 0, std::make_pair(hashGenesisBlock, 1501545600) )
         ( 1, std::make_pair(uint256("0x00000027ce1c10e2291b279113b39b2756d48b43233bbbd9b51712d6af0e5559"), 1512855864) )
-      ( 120, std::make_pair(uint256("0x0000002baed5df71f6ca6c3522f68acf0ed54a84fca9c0b5afcf4bb90aeb0dfd"), 1512969006) )
+        ( 120, std::make_pair(uint256("0x0000002baed5df71f6ca6c3522f68acf0ed54a84fca9c0b5afcf4bb90aeb0dfd"), 1512969006) )
+        ( 210000, std::make_pair(uint256("0x000000003fe13affaa02b72fce3e032ee9cf89da3122a4472f51ec56b97c490c"), 1545738026) )
 
     ;
-
-//    static ListBannedBlocks listBanned =
-//        boost::assign::list_of
-        // Invalid block #221047 with future timestamp of 2016/02/23 09:24:17 UTC
-//        ( uint256("0x46223e5432ceffe650d5729b4bb8479dcdf0ca1e534fa8e69382dc87b42ea94b") )
-//    ;
 
     // TestNet has no checkpoints
     static MapCheckpoints mapCheckpointsTestnet =
