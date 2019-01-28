@@ -463,7 +463,7 @@ void ThreadNtpSamples(void* parg) {
     // Make this thread recognisable as time synchronization thread
     RenameThread("bottlecapsplus-ntp-samples");
 
-    CMedianFilter<int64_t> vTimeOffsets(200,0);
+    CMedianFilter<int64_t> vTimeOffsets(9,0);
 
     while (!fShutdown) {
         if (strTrustedUpstream != "localhost") {
