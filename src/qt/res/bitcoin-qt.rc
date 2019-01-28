@@ -22,7 +22,7 @@ BEGIN
             VALUE "FileDescription",    "BottleCapsPlus-Qt (OSS GUI client for BottleCapsPlus)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "bottlecapsplus-qt"
-            VALUE "LegalCopyright",     "2009-2012 The Bitcoin developers, 2012-2014 The NovaCoin & PPCoin developers, 2017 The BottleCapsPlus developers"
+            VALUE "LegalCopyright",     "2009-2012 The Bitcoin developers, 2012-2014 The NovaCoin & PPCoin developers, 2017-2019 The BottleCapsPlus developers"
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "bottlecapsplus-qt.exe"
             VALUE "ProductName",        "BottleCapsPlus-Qt"

@@ -21,13 +21,13 @@ Copyright © 2011-2012 The PPCoin Developers
 Copyright © 2014 The Peerunity Developers
 Copyright © 2014 The EmerCoin Developers
 Copyright © 2012-2016 The NovaCoin developers
-Copyright © 2017 The BottleCapsPlusCoin developers</source>
+Copyright © 2017-2019 The BottleCapsPlusCoin developers</source>
         <translation>© 2009-2016 Розробники Bitcoin
 © 2011-2012 Розробники PPCoin
 © 2014 Розробники Peerunity
 © 2014 Розробники EmerCoin
 © 2012-2016 Розробники NovaCoin
-© 2017 Розробники BottleCapsPlusCoin</translation>
+© 2017-2019 Розробники BottleCapsPlusCoin</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="114"/>
